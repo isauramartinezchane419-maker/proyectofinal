@@ -1,0 +1,192 @@
+
+/* Footer */
+footer {
+    background-color: #1a252f;
+    color: #bdc3c7;
+    padding-top: 50px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo h3 {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo h3 i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.moneda {
+    color: #f1c40f;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-links h4, .footer-payment h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.payment-icons {
+    display: flex;
+    font-size: 2.5rem;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.payment-icons i {
+    color: #bdc3c7;
+    transition: color 0.3s;
+}
+
+.payment-icons i:hover {
+    color: #3498db;
+}
+
+.fa-money-bill-wave {
+    color: #2ecc71 !important;
+}
+
+.fa-credit-card {
+    color: #3498db !important;
+}
+
+.shipping-icons {
+    display: flex;
+    font-size: 2rem;
+    gap: 15px;
+    color: #3498db;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .product-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .offer-content h3 {
+        font-size: 2rem;
+    }
+    
+    .contact .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .header-icons {
+        margin-left: auto;
+    }
+    
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+    
+    .categories-grid, .products-grid, .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-actions {
+        flex-direction: column;
+    }
+    
+    .pagination {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-logo, .footer-links, .footer-payment {
+        text-align: center;
+    }
+    
+    .payment-icons, .shipping-icons {
+        justify-content: center;
+    }
+}

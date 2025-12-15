@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soto Sport Wear - Tu Tienda Deportiva</title>
+    <link rel="stylesheet" href="estilo0.css">
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="estilo3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-running"></i> SOTO SPORT WEAR</h1>
+                <p class="slogan">Tu tienda deportiva de confianza</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner principal -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>EQUIPA TU PASIÓN DEPORTIVA</h2>
+            <p>Productos de alta calidad para todos los deportes y actividades</p>
+            <a href="#productos" class="btn-hero">Ver productos destacados</a>
+        </div>
+    </section>
+
+    <!-- Categorías destacadas -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="futbol">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Fútbol</h3>
+                    <p>Botines, camisetas, balones y accesorios</p>
+                </div>
+                <div class="category-card" data-category="voley">
+                    <div class="category-icon">
+                        <i class="fas fa-volleyball-ball"></i>
+                    </div>
+                    <h3>Vóley</h3>
+                    <p>Rodilleras, balones, redes y equipo completo</p>
+                </div>
+                <div class="category-card" data-category="running">
+                    <div class="category-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Running</h3>
+                    <p>Zapatillas, ropa y accesorios para corredores</p>
+                </div>
+                <div class="category-card" data-category="entrenamiento">
+                    <div class="category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Entrenamiento</h3>
+                    <p>Equipo para gimnasio y fitness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="featured-products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="futbol">Fútbol</button>
+                <button class="filter-btn" data-filter="voley">Vóley</button>
+                <button class="filter-btn" data-filter="running">Running</button>
+                <button class="filter-btn" data-filter="entrenamiento">Entrenamiento</button>
+                <button class="filter-btn" data-filter="ofertas">Ofertas</button>
+            </div>
+            <div class="products-grid">
+                <!-- Productos se cargan dinámicamente con JavaScript -->
+            </div>
+            <div class="pagination">
+                <button id="prev-page" class="pagination-btn">Anterior</button>
+                <span id="page-info">Página 1 de 5</span>
+                <button id="next-page" class="pagination-btn">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas especiales -->
+    <section class="offers" id="ofertas">
+        <div class="container">
+            <h2 class="section-title">Ofertas Especiales</h2>
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <h3>Hasta 50% de descuento</h3>
+                    <p>En equipamiento deportivo profesional</p>
+                    <p class="offer-timer">La oferta termina en: <span id="countdown">05:00:00</span></p>
+                    <a href="#productos" class="btn-offer" data-filter="ofertas">Ver ofertas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonios-slider">
+                <div class="testimonio active">
+                    <p>"Excelente calidad en los productos. Los precios en soles son muy competitivos."</p>
+                    <div class="testimonio-autor">
+                        <h4>Javier Martínez</h4>
+                        <p>Jugador de fútbol</p>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <p>"Las zapatillas de running son increíbles, muy cómodas y a buen precio en soles."</p>
+                    <div class="testimonio-autor">
+                        <h4>Carlos Rodríguez</h4>
+                        <p>Corredor de maratones</p>
+                    </div>
+                </div>
+                <div class="testimonio-nav">
+                    <button class="testimonio-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonio-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section class="about">
+        <div class="container">
+            <section class="about-content">
+                <h2>Sobre Soto Sport Wear</h2>
+                <p>Somos una tienda deportiva especializada en ofrecer equipamiento de alta calidad para todos los <br>
+                     deportes. Con más de 10 años de experiencia, proporcionamos productos para deportistas 
+                     profesionales, equipos y aficionados.</p>
+                
+                <section class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-medal"></i>
+                        <h4>Calidad Garantizada</h4>
+                        <p>Productos de primera calidad</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h4>Envío a Todo Espinar</h4>
+                        <p>Entrega en 24h</p>
+                    </div>
+                
+                </section>
+            </section>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Jr. Cusco</p>
+                <p><i class="fas fa-phone"></i> +51 912 345 678</p>
+                <p><i class="fas fa-envelope"></i> info@sotosportwear.com</p>
+                <p><i class="fas fa-clock"></i> Lunes a Viernes: 07:00 - 08:00</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h3><i class="fas fa-running"></i> SOTO SPORT WEAR</h3>
+                <p>Tu tienda deportiva de confianza desde 2012</p>
+               
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-payment">
+                <h4>Métodos de pago</h4>
+                <div class="payment-icons">
+                
+                    <i class="fas fa-credit-card"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    
+                </div>
+                <h4 class="mt-20">Envíos por</h4>
+                <div class="shipping-icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <i class="fas fa-truck"></i>
+                    <i class="fas fa-box"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Soto Sport Wear. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="javascripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Ofertas */
+.offers {
+    padding: 80px 0;
+    background-color: #500c0c;
+}
+
+.offer-banner {
+    background: linear-gradient(135deg, #0a639e, #2c3e50);
+    border-radius: 15px;
+    padding: 60px 40px;
+    color: white;
+    text-align: center;
+}
+
+.offer-content h3 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.offer-content p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.offer-timer {
+    font-size: 1rem;
+    margin: 30px 0;
+}
+
+#countdown {
+    font-weight: 700;
+    color: #f1c40f;
+    font-size: 2rem;
+}
+
+.btn-offer {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: 2px solid #f1c40f;
+}
+
+.btn-offer:hover {
+    background-color:none;
+    color: rgb(44, 42, 42);
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 80px 0;
+    background-color: #470404;
+}
+
+.testimonios-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonio {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    display: none;
+}
+
+.testimonio.active {
+    display: block;
+}
+
+.testimonio p {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.testimonio-autor h4 {
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.testimonio-autor p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: normal;
+}
+
+.testimonio-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.testimonio-prev, .testimonio-next {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.testimonio-prev:hover, .testimonio-next:hover {
+    background-color: #cbd5db;
+}
+
+/* Sobre nosotros */
+.about {
+    padding: 80px 0;
+    background-color: #470404;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.8;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature {
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.feature h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 0;
+}
+
+/* Contacto */
+.contact {
+    padding: 80px 0;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #3498db;
+    width: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30%;
+    margin-right: 20px;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #dde4e9;
+    transform: translateY(-10px);
+}
+
+

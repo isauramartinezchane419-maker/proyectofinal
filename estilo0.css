@@ -1,0 +1,238 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: white;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* Cabecera */
+header {
+    background-color: black;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 i {
+    color: white;
+    margin-right: 10px;
+}
+
+.slogan {
+    font-size: 0.8rem;
+    color: white;
+    font-style: italic;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: powderblue;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons button, .header-icons .cart-icon {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    color: white;
+}
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;   
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.mobile-nav li {
+    margin-bottom: 15px;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mobile-nav a:hover, .mobile-nav a.active {
+    background-color: #f5f7fa;
+    color: #3498db;
+}
+
+/* Banner principal */
+.hero {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: 2px solid #3498db;
+}
+
+.btn-hero:hover {
+    background-color: transparent;
+    color: #3498db;
+}
+
+
+
+
+
